@@ -1,0 +1,48 @@
+.map-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Pusatkan secara horizontal */
+    justify-content: center; /* Pusatkan secara vertikal */
+  }
+  
+  .destination-input {
+    display: flex;
+    justify-content: center; /* Pusatkan input dan tombol secara horizontal */
+    align-items: center;
+    margin: 20px 0; /* Berikan sedikit margin di sekitar input */
+  }
+  
+  .destination-input input {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px; /* Ukuran input */
+  }
+  
+  .destination-input button {
+    padding: 10px 20px;
+    background-color: #00e6e6;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .tracking-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .tracking-btn {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #00e6e6;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,165 @@
+/* Navbar Container */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1000;
+}
+
+/* Logo Section */
+.header-logo-container img {
+  height: 50px;
+}
+
+/* Header Links */
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin-left: 20px;
+}
+
+.header-links li {
+  cursor: pointer;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.header-links li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Header Right Section */
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+/* Search Bar Container */
+.header-input-container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  width: 250px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.header-input-container input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  width: 100%;
+}
+
+.cancel-icon {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+/* Tags (Search, Bookmark, Notification) */
+.header-tags ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+.header-tags li {
+  cursor: pointer;
+}
+
+/* Avatar Container */
+.avatar-container img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Header Buttons */
+.header-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.header-login,
+.header-signup {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.header-login:hover,
+.header-signup:hover {
+  background-color: #0056b3;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger-menu img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Mobile Menu Styles */
+.header-links.mobile-menu-active {
+  display: block;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+.header-links.mobile-menu-active li {
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+  .header-links {
+    display: none; /* Hide links on mobile */
+  }
+
+  .hamburger-menu {
+    display: block; /* Show hamburger icon on mobile */
+  }
+
+  .header-buttons {
+    display: none; /* Hide buttons on mobile */
+  }
+
+  .header-logo-container img {
+    display: none; /* Hide logo on mobile */
+  }
+
+  .header-links.mobile-menu-active {
+    display: flex;
+    flex-direction: column;
+  }
+}
