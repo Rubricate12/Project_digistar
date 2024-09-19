@@ -1,0 +1,65 @@
+.live-tracking {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .on-delivery {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .map {
+    margin-top: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .driver-info {
+    margin-top: 20px;
+  }
+  
+  .driver-info h4 {
+    margin-bottom: 10px;
+  }
+  
+  .status-updates {
+    margin-top: 10px;
+  }
+  
+  .status-update {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .status-circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: grey; /* Warna default */
+  }
+  
+  .status-update.active .status-circle {
+    background-color: green; /* Warna untuk status aktif */
+  }
+  
+  .status-update.warning .status-circle {
+    background-color: red; /* Warna untuk status peringatan */
+  }
+  
+  .status-message {
+    font-size: 14px;
+  }
+  

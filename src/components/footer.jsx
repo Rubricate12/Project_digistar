@@ -23,10 +23,10 @@ export default function Footer() {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/track" className="footer-link" activeClassName="active">
-              <FiMapPin className="footer-icon" />
-              <span className="footer-text">Track</span>
-            </NavLink>
+          <NavLink to="/tracking" className="footer-link" activeClassName="active">
+             <FiMapPin className="footer-icon" />
+             <span className="footer-text">Track</span>
+          </NavLink>
           </li>
         </ul>
       </div>

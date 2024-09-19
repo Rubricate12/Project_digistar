@@ -13,6 +13,7 @@ const MapWithTracking = lazy(() => import("./pages/map.jsx"));
 const RouteInformation = lazy(() => import("./pages/RouteInformation.jsx"));
 const DeliveryActivity = lazy(() => import("./pages/DeliveryActivity.jsx")); 
 const OrderSummary = lazy(() => import("./pages/OrderSummary.jsx"));
+const TrackingPage = lazy(() => import("./pages/TrackingPage.jsx")); // Menambahkan halaman TrackingPage
 
 function App() {
   const [history, setHistory] = useState([]);
@@ -32,6 +33,7 @@ function App() {
             <Route path="/routes" element={<RouteInformation />} />
             <Route path="/delivery" element={<DeliveryActivity />} />
             <Route path="/order-summary/:orderId" element={<OrderSummary />} />
+            <Route path="/tracking" element={<TrackingPage />} /> 
           </Routes>
         </Suspense>
       </Router>
