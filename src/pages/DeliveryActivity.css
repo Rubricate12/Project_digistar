@@ -1,0 +1,91 @@
+.delivery-activity {
+    padding: 20px;
+  }
+  
+  .tab {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .tab-button {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+  
+  .tab-button.active {
+    color: orange;
+    border-bottom: 3px solid orange;
+  }
+  
+  .orders-list {
+    margin-top: 20px;
+  }
+  
+  .order-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 8px;
+  }
+  
+  .order-info {
+    flex: 1;
+  }
+  
+  .order-footer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .status {
+    color: #00A859; /* Status color */
+    font-weight: bold;
+  }
+  
+  .arrow-button {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: gray;
+  }
+  
+  .arrow-button:hover {
+    color: orange;
+  }
+  
+  /* Bottom Navigation Bar */
+  .bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-button {
+    flex: 1;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .nav-button.active {
+    color: orange;
+  }
+  

@@ -1,6 +1,6 @@
-import "./App.css";
 import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 import { useState, Suspense, lazy } from 'react';
+import "./App.css";
 
 // Lazy loading components
 const Home = lazy(() => import("./pages/home.jsx"));
@@ -10,6 +10,9 @@ const Dashboard = lazy(() => import("./signUp/dashboard.jsx"));
 const PhoneVerify = lazy(() => import("./signUp/verification.jsx"));
 const History = lazy(() => import("./pages/history.jsx"));
 const MapWithTracking = lazy(() => import("./pages/map.jsx"));
+const RouteInformation = lazy(() => import("./pages/RouteInformation.jsx"));
+const DeliveryActivity = lazy(() => import("./pages/DeliveryActivity.jsx")); 
+const OrderSummary = lazy(() => import("./pages/OrderSummary.jsx"));
 
 function App() {
   const [history, setHistory] = useState([]);
@@ -26,6 +29,9 @@ function App() {
             <Route path='/verification' element={<PhoneVerify />} />
             <Route path="/history" element={<History />} />
             <Route path="/map" element={<MapWithTracking />} />
+            <Route path="/routes" element={<RouteInformation />} />
+            <Route path="/delivery" element={<DeliveryActivity />} />
+            <Route path="/order-summary/:orderId" element={<OrderSummary />} />
           </Routes>
         </Suspense>
       </Router>

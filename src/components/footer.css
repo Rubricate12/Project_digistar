@@ -1,0 +1,52 @@
+.footer {
+    background-color: #ffffff; /* White background */
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .footer-nav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 40px; /* Space between icons */
+  }
+  
+  .footer-link {
+    text-decoration: none;
+    color: #808080; /* Default gray color for inactive pages */
+    font-size: 14px;
+    display: flex;
+    flex-direction: column; /* Stack icons and text vertically */
+    align-items: center;
+    transition: color 0.3s;
+  }
+  
+  .footer-link:hover {
+    color: #ff7f00; /* Orange hover effect */
+  }
+  
+  .footer-icon {
+    font-size: 24px; /* Adjust the size of the icons */
+    margin-bottom: 5px; /* Space between icon and text */
+  }
+  
+  .footer-text {
+    font-weight: bold;
+  }
+  
+  .active {
+    color: #ff7f00; /* Orange color for the active page */
+  }
+  
+  .footer-link:not(.active) {
+    color: #808080; /* Gray color for inactive pages */
+  }
+  

@@ -1,53 +1,35 @@
-import { CiFacebook } from "react-icons/ci";
-import { AiFillTwitterCircle } from "react-icons/ai";
-import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { FaRoute } from "react-icons/fa";  // Icon for Routes
+import { MdDeliveryDining } from "react-icons/md";  // Icon for Delivery
+import { FiMapPin } from "react-icons/fi";  // Icon for Track
 
 export default function Footer() {
-    return (
-        <div className="footer">
-            <div className="socials">
-                <a href="https://www.facebook.com" className="link" aria-label="Facebook">
-                    <CiFacebook />
-                </a>
-                <a href="https://twitter.com" className="link" aria-label="Twitter">
-                    <AiFillTwitterCircle />
-                </a>
-                <a href="https://www.instagram.com" className="link" aria-label="Instagram">
-                    <FaInstagram />
-                </a>
-                <a href="https://www.linkedin.com" className="link" aria-label="LinkedIn">
-                    <FaLinkedin />
-                </a>
-            </div>
-
-            <ul className="list">
-                <li>
-                    <Link to="/" className="links">
-                        Home
-                    </Link>
-                </li>
-                <li>
-                    <Link to="/map" className="links">
-                        Map
-                    </Link>
-                </li>
-                <li>
-                    <Link to="/download" className="links">
-                        Download
-                    </Link>
-                </li>
-                <li>
-                    <Link to="/privacy-policy" className="links">
-                        Privacy Policy
-                    </Link>
-                </li>
-            </ul>
-
-            <p className="copyright">
-                Zidio development © 2024
-            </p>
-        </div>
-    );
+  return (
+    <footer className="footer">
+      <div className="footer-content">
+        {/* Footer navigation with icons */}
+        <ul className="footer-nav">
+          <li>
+            <NavLink to="/routes" className="footer-link" activeClassName="active">
+              <FaRoute className="footer-icon" />
+              <span className="footer-text">Routes</span>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/delivery" className="footer-link" activeClassName="active">
+              <MdDeliveryDining className="footer-icon" />
+              <span className="footer-text">Delivery</span>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/track" className="footer-link" activeClassName="active">
+              <FiMapPin className="footer-icon" />
+              <span className="footer-text">Track</span>
+            </NavLink>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  );
 }

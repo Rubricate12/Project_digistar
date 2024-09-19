@@ -1,0 +1,27 @@
+.order-summary {
+    padding: 20px;
+  }
+  
+  .order-details {
+    margin-top: 20px;
+  }
+  
+  .live-tracking-button {
+    background-color: orange;
+    padding: 10px;
+    border: none;
+    color: white;
+  }
+  
+  .contact-section {
+    margin-top: 20px;
+  }
+  
+  .contact-button {
+    margin-right: 10px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+  }
+  
